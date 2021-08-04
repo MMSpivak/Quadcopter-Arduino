@@ -15,12 +15,12 @@ void setup() {
   delay(2000);
   Serial.print("Servo test commencing! Starting with half throttle");
   delay(2000);
-  ESC.write(20);
+  ESC.write(90);
   delay(5000);
   ESC.write(0);
   Serial.print("Prepare for full throttle!");
   delay(2000);
-  ESC.write(40);
+  ESC.write(180);
   delay(2000);
 }
 void loop() {
