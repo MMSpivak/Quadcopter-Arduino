@@ -1,5 +1,9 @@
 /*
  * How I controlled the brushless motors for testing purposes.
+ * Code modified from @How To Mechatronics 
+ * 
+ * By: Michael Spivak
+ * 8/10/2021
 */
 #include <Servo.h>
 Servo ESC;     // create servo object to control the ESC
@@ -24,7 +28,7 @@ void loop() {
   } else if(potValue > 160){
     potValue = 180;
   }
-  
+
   ESC.write(potValue);   // Send the signal to the ESC
 
   Serial.print("Motor speed: ");
